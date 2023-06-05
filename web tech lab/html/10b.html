@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Example of CSS Layers Effect</title>
+<style>
+    .container{
+        position: relative;
+    }
+    .box{
+        width: 150px;
+        height: 150px;
+        opacity: 0.7;
+        position: absolute;
+    }
+    .red{
+        z-index: 1;
+    }
+    .green{
+        top: 30px;
+        left: 30px;
+        background: #00ff00;
+        z-index: 2;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:q-80/et00302403-jmbsnyjdek-portrait.jpg" alt="W3Schools.com"></div>
+        <div class="box green"><img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:q-80/et00302403-jmbsnyjdek-portrait.jpg" alt="W3Schools.com"></div>
+    </div>
+</body>
+</html>

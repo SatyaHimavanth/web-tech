@@ -1,0 +1,20 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Leap year</h1>
+        <button onclick="leap_year()">Click to enter number</button>
+        <p id="demo"></p>
+        <script>
+            function leap_year(){
+                let num = prompt("Enter number :",);
+                if ((num%4 == 0 && num%100 != 0) || (num%400 == 0)){
+                    document.getElementById("demo").innerHTML = num+" is a leap year.";
+                }
+                else{
+                    document.getElementById("demo").innerHTML = num+" is not a leap year.";
+                }
+            }
+        </script>
+    </body>
+</html>

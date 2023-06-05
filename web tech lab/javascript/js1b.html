@@ -1,0 +1,22 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Biggest of three</h1>
+        <p id="demo"><p>
+        <script>
+            let n1 = prompt("Enter 1st number :",);
+            let n2 = prompt("Enter 2nd number :",);
+            let n3 = prompt("Enter 3rd number :",);
+            if(n1>=n2 && n1>=n3){
+                document.getElementById("demo").innerHTML = "Biggest element is " + n1;
+            }
+            else if(n2>=n1 && n2>=n3){
+                document.getElementById("demo").innerHTML = "Biggest element is " + n2;
+            }
+            else{
+                document.getElementById("demo").innerHTML = "Biggest element is " + n3;
+            }
+        </script>
+    </body>
+</html>
