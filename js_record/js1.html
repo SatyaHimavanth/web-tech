@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Factorial of given number</title>
+    </head>
+    <body>
+        <h2>Factorial of given number</h2>
+        <button onclick="input()">Click to enter number</button>
+        <p id="demo"></p>
+        <script>
+            function fact(n){
+                a=1;
+                for(let i=n;i>0;i--){
+                    a=a*i;
+                }
+                return a;
+            }
+            function input(){
+                let num = prompt("Enter your number", );
+                if (num != null) {
+                    document.getElementById("demo").innerHTML = fact(num);
+                }
+            }
+        </script>
+    </body>
+</html>
+

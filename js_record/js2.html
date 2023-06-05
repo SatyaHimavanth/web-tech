@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Smallest non negative number</title>
+    </head>
+    <body>
+        <h2>Smallest number</h2>
+        <button onclick="input()">Click to enter numbers</button>
+        <script>
+            function input(){
+                const num = []
+                let c = prompt("Enter numbers count", );
+                for(let i=0;i<c;i++){
+                    n= prompt("Enter "+i+"th number", );
+                    num[i] = Number(n);
+                }
+                let s = num[0];
+                for(let i=0; i<c; i++){
+                    if(num[i]<0){
+                        continue;
+                    }
+                    else{
+                        s=num[i];
+                    }
+                }
+                document.write("Given array is : "+num+"  ");
+                document.write("Smallest number is : "+s);
+            }
+        </script>
+    </body>
+</html>

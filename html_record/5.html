@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LAB CYCLE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #05ecfc;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body bgcolor=#05ecfc;>
+<h2>Capitals</h2>
+<p>Click on the buttons to know the which state capital:</p>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="openCity(event, 'Kabul')">Kabul</button>
+  <button class="tablinks" onclick="openCity(event, 'Nassau')">Nassau</button>
+  <button class="tablinks" onclick="openCity(event, 'Delhi')">Delhi</button>
+  <button class="tablinks" onclick="openCity(event, 'Washington, D.C.')">Washington, D.C.</button>
+</div>
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+<div id="Kabul" class="tabcontent">
+  <h3>Kabul</h3>
+  <p>Kabul is the capital city of Afghanistan.</p>
+</div>
+<div id="Nassau" class="tabcontent">
+  <h3>Nassau</h3>
+  <p>Nassau is the capital of Bahamas.</p> 
+</div>
+<div id="Delhi" class="tabcontent">
+  <h3>Delhi</h3>
+  <p>Delhi is the capital of India.</p>
+</div>
+<div id="Washington, D.C." class="tabcontent">
+  <h3>Washington, D.C.</h3>
+  <p>Washington, D.C. capital of the United States of America.</p>
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>  
+</body>
+</html> 

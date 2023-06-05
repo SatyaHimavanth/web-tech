@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Mathematical operations</title>
+    </head>
+    <body>
+        <h2>Mathematical operations on numbers</h2>
+        <button onclick="add()">Add</button><br>
+        <button onclick="sub()">Subtract</button><br>
+        <button onclick="mul()">Multiply</button><br>
+        <button onclick="div()">Divide</button><br>
+        <p id="demo"></p>
+        <script>
+            function input1(){
+                let num1 = prompt("Enter 1st number", );
+                return num1;
+            }
+            function input2(){
+                let num2 = prompt("Enter 2nd number", );
+                return num2;
+            }
+            let a = Number(input1());
+            let b = Number(input2());
+            function add(){
+                document.write(a+b);
+            }
+            function sub(){
+                document.getElementById("demo").innerHTML = a-b;
+            }
+            function mul(){
+                document.getElementById("demo").innerHTML = a*b;
+            }
+            function div(){
+                document.getElementById("demo").innerHTML = a/b;
+            }
+        </script>
+    </body>
+</html>
